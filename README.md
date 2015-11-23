@@ -1,6 +1,7 @@
 # Analiza podjetja BMW
 
 Avtor: Dejan Gašparič
+
 Mentor: Janoš Vidali
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
