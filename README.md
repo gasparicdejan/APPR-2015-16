@@ -21,7 +21,7 @@ Glavni cilj analize je analizirati rast proizvodnje ter prodaje vozil in motocik
 Podatke bom pridobil na spletu:
 - https://en.wikipedia.org/wiki/BMW,
 - http://left-lane.com/european-car-sales-data/bmw/,
-- http://www.conceptcarz.com/vehicle/default.aspx?carID=22802&i=12,
+- http://www.conceptcarz.com/view/model/3/BMW.aspx,
 - http://www.e38.org/BMWProductionData.pdf.
 
 ## Program
