@@ -33,7 +33,7 @@ uvozi2 <- function() {return(read.delim("podatki/chemical.csv", sep = ";", as.is
                                         row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
                                         fileEncoding = "Windows-1250"))}
 
-cat("Uvažam podatke o uvoz-u kemikalij (tabela 1)\n")
+cat("Uvažam podatke o uvoz-u kemikalij (tabela 2)\n")
 kemikalije <- uvozi2()
 
 
@@ -43,7 +43,7 @@ uvozi3 <- function() {return(read.delim("podatki/fuels.csv", sep = ";", as.is = 
                                         row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
                                         fileEncoding = "Windows-1250"))}
 
-cat("Uvažam podatke o uvoz-u goriv (tabela 1)\n")
+cat("Uvažam podatke o uvoz-u goriv (tabela 3)\n")
 goriva <- uvozi3()
 
 
@@ -53,7 +53,7 @@ uvozi4 <- function() {return(read.delim("podatki/minerals.csv", sep = ";", as.is
                                         row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
                                         fileEncoding = "Windows-1250"))}
 
-cat("Uvažam podatke o uvoz-u mineralov (tabela 1)\n")
+cat("Uvažam podatke o uvoz-u mineralov (tabela 4)\n")
 minerali <- uvozi4()
 
 
@@ -63,5 +63,55 @@ uvozi5 <- function() {return(read.delim("podatki/metals.csv", sep = ";", as.is =
                                         row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
                                         fileEncoding = "Windows-1250"))}
 
-cat("Uvažam podatke o uvoz-u kovin (tabela 1)\n")
+cat("Uvažam podatke o uvoz-u kovin (tabela 5)\n")
 kovine <- uvozi5()
+
+
+
+
+uvozi6 <- function() {return(read.delim("podatki/plastic or rubber.csv", sep = ";", as.is = TRUE,
+                                        row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
+                                        fileEncoding = "Windows-1250"))}
+
+cat("Uvažam podatke o uvoz-u plastik ali gum (tabela 6)\n")
+plastika_gume <- uvozi6()
+
+
+
+
+uvozi7 <- function() {return(read.delim("podatki/wood.csv", sep = ";", as.is = TRUE,
+                                        row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
+                                        fileEncoding = "Windows-1250"))}
+
+cat("Uvažam podatke o uvoz-u lesa (tabela 7)\n")
+les <- uvozi7()
+
+
+
+
+uvozi8 <- function() {return(read.delim("podatki/textiles and chlothing.csv", sep = ";", as.is = TRUE,
+                                        row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
+                                        fileEncoding = "Windows-1250"))}
+
+cat("Uvažam podatke o uvoz-u tekstil in oblek (tabela 8)\n")
+tekstil_obleke <- uvozi8()
+
+
+
+
+uvozi9 <- function() {return(read.delim("podatki/stone and glass.csv", sep = ";", as.is = TRUE,
+                                        row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
+                                        fileEncoding = "Windows-1250"))}
+
+cat("Uvažam podatke o uvoz-u kamenja in stekla (tabela 9)\n")
+kamen_steklo <- uvozi9()
+
+
+
+
+uvozi10 <- function() {return(read.delim("podatki/vegetables.csv", sep = ";", as.is = TRUE,
+                                        row.names = NULL, na.strings= c("Partner Name", "2010", "2011", "2012", "2013", "2014"),
+                                        fileEncoding = "Windows-1250"))}
+
+cat("Uvažam podatke o uvoz-u zelenjave (tabela 10)\n")
+zlenjava <- uvozi10()
