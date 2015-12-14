@@ -16,13 +16,12 @@ Glavni modeli motociklov: K, S, G, F, R, C in HP.
 
 ## Cilj
 
-Glavni cilj analize je analizirati rast proizvodnje ter prodaje vozil BMW na svetovni ravni za zadnje desetletje, pri tem bom tudi upošteval v katere države so bili produkti prodani in podatke o prodaji v različne države prikazal geografsko.
+Glavni cilj analize je analizirati rast prodaje vozil BMW, Mini in Rolls-Royce na svetovni ravni, za obdobje zadnjih let. Podatke bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
 
 Podatke bom pridobil na spletu:
 - https://en.wikipedia.org/wiki/BMW,
 - http://left-lane.com/european-car-sales-data/bmw/,
-- http://www.conceptcarz.com/sales/salesVolume.aspx?makeID=3,
-- http://www.e38.org/BMWProductionData.pdf.
+- http://www.conceptcarz.com/sales/salesVolume.aspx?makeID=3.
 
 ## Program
 
