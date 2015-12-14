@@ -19,9 +19,10 @@ Glavni modeli motociklov: K, S, G, F, R, C in HP.
 Glavni cilj analize je analizirati rast proizvodnje ter prodaje vozil in motociklov na svetovni ravni za zadnje desetletje, pri tem bom tudi upošteval v katere države so bili produkti prodani in podatke o prodaji v različne države prikazal geografsko.
 
 Podatke bom pridobil na spletu:
-- http://www.bmwgroup.com/e/0_0_www_bmwgroup_com/investor_relations/ir_2011.html,
 - https://en.wikipedia.org/wiki/BMW,
-- http://www.bmwgroup.com/e/0_0_www_bmwgroup_com/produktion/produktionsnetzwerk/produktionsstandorte/standorte/index.html
+- http://left-lane.com/european-car-sales-data/bmw/,
+- http://www.conceptcarz.com/vehicle/default.aspx?carID=22802&i=12,
+- http://www.e38.org/BMWProductionData.pdf.
 
 ## Program
 
