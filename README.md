@@ -10,13 +10,13 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
 Nemško podjetje BMW AG (Bayerische Motoren Werke Aktiengesellschaft) je eden izmed vodilnih proizvajalcev avtomobilov, motociklov ter njihovih sestavnih delov na svetu, ki je bilo ustanovljeno leta 1916 in je del koncerna BMW Group, ki ima v lasti še avtomobilski znamki Mini in Rolls-Royce ter podznamki BMW M in BMW i. Sedež podjetja je v mestu München, kjer je zraven poslovne zgradbe BMW še BMW muzej, BMW svet (BMW Welt) in obrat München za izdelavo avtomobilov. Podjetje ima zaposlenih nekaj več kot 115.000 ljudi po vsem svetu.
 
-Glavni modeli avtomobilov: serija 1, serija 2, serija 3, serija 4, serija 5, serija 6, serija 7,   X1, X3, X4, X5, X6, Z4, M3, M4, M5, M6, X5 M, X6 M, i3 IN i8.
+Glavni modeli avtomobilov BMW: serija 1, serija 2, serija 3, serija 4, serija 5, serija 6, serija 7,   X1, X3, X4, X5, X6, Z4, M3, M4, M5, M6, X5 M, X6 M, i3 in i8.
 
-Glavni modeli motociklov: K, S, G, F, R, C in HP.
+Glavni modeli motociklov BMW: K, S, G, F, R, C in HP.
 
 ## Cilj
 
-Glavni cilj analize je analizirati rast prodaje vozil BMW, Mini in Rolls-Royce na svetovni ravni, za obdobje zadnjih let. Podatke bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
+Glavni cilj analize je analizirati rast prodaje vozil BMW na svetovni ravni, za obdobje zadnjih let. Podatke bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
 
 Podatke bom pridobil na spletu:
 - http://left-lane.com/european-car-sales-data/bmw/,
