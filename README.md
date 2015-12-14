@@ -1,4 +1,4 @@
-# Analiza podjetja BMW
+# Analiza izvoza Slovenije
 
 Avtor: Dejan Gašparič
 
@@ -6,22 +6,26 @@ Mentor: Janoš Vidali
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
-## Podjetje BMW
+## Tematika
 
-Nemško podjetje BMW AG (Bayerische Motoren Werke Aktiengesellschaft) je eden izmed vodilnih proizvajalcev avtomobilov, motociklov ter njihovih sestavnih delov na svetu, ki je bilo ustanovljeno leta 1916 in je del koncerna BMW Group, ki ima v lasti še avtomobilski znamki Mini in Rolls-Royce ter podznamki BMW M in BMW i. Sedež podjetja je v mestu München, kjer je zraven poslovne zgradbe BMW še BMW muzej, BMW svet (BMW Welt) in obrat München za izdelavo avtomobilov. Podjetje ima zaposlenih nekaj več kot 115.000 ljudi po vsem svetu.
+Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje Slovenije. V obsegu te analize, bom obravnaval izvoz naše države v druge države sveta v zadnjih letih. Za vsako državo s katero Slovenija trguje, bodo podatki razvršeni po izdelkih/pridelkih.
+Podatki bomo predatavljali, kot izvoz v tisoč ameriških dolarjih (US$) in sicer bo ena enota velika tisoč ameriških dolarjev.
 
-Glavni modeli avtomobilov BMW: serija 1, serija 2, serija 3, serija 4, serija 5, serija 6, serija 7,   X1, X3, X4, X5, X6, Z4, M3, M4, M5, M6, X5 M, X6 M, i3 in i8.
-
-Glavni modeli motociklov BMW: K, S, G, F, R, C in HP.
+Podatke bom pridobil na spletni strani: 
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/01-05_Animal,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/06-15_Vegetable,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/25-26_Minerals,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/27-27_Fuels,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/28-38_Chemicals,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/39-40_PlastiRub,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/44-49_Wood,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/50-63_TextCloth,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/68-71_StoneGlas,
+- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/72-83_Metals.
 
 ## Cilj
 
-Glavni cilj analize je analizirati rast prodaje vozil BMW na svetovni ravni, za obdobje zadnjih let. Podatki bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
-
-Podatke bom pridobil na spletu:
-- http://left-lane.com/european-car-sales-data/bmw/,
-- http://left-lane.com/us-car-sales-data/bmw/,
-- http://left-lane.com/china-car-sales-data/bmw/.
+Namen analize je ugotviti v katere države Slovenija največ izvaža, kaj največ izvaža ter kako se izvoz spreminja skozi čas.
 
 ## Program
 
