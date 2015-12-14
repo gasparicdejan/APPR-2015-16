@@ -16,7 +16,7 @@ Glavni modeli motociklov BMW: K, S, G, F, R, C in HP.
 
 ## Cilj
 
-Glavni cilj analize je analizirati rast prodaje vozil BMW na svetovni ravni, za obdobje zadnjih let. Podatke bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
+Glavni cilj analize je analizirati rast prodaje vozil BMW na svetovni ravni, za obdobje zadnjih let. Podatki bodo prikazani po mesečni prodaji, in sicer v območja Evrope, Zduženih držav Amerike, Kanade ter Kitajske.
 
 Podatke bom pridobil na spletu:
 - http://left-lane.com/european-car-sales-data/bmw/,
