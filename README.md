@@ -14,7 +14,7 @@ Podatke bom pridobil na spletni strani:
 - https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/Total;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Export/Indicator/XPRT-TRD-VL/Partner/by-country/Product/Total;
-- ostale bom razdelil po produktih izmed zadnjih dveh povezav.
+- ostale povezave sledijo iz klasifikacije po produktih izmed zadnjih dveh povezav.
 
 ## Cilj
 
