@@ -73,7 +73,9 @@ uvoz_v_tisoč_USD_v_letu_2013<-tabela_uvoz_vseh_produktov$X2013
 uvoz_v_tisoč_USD_v_letu_2014<-tabela_uvoz_vseh_produktov$X2014
 
 uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov)+ 
-    aes(x=Države, y=Uvoz.v.tisoč.USD)+
+    aes(x=Države, y=c("uvoz_v_tisoč_USD_v_letu_2010","uvoz_v_tisoč_USD_v_letu_2011",
+    "uvoz_v_tisoč_USD_v_letu_2012","uvoz_v_tisoč_USD_v_letu_2013","uvoz_v_tisoč_USD_v_letu_2014"))+
+    geom_line(colour = "red")+
     ggtitle("Skupni uvoz ZDA v letih 2010 do 2014")+
     theme(plot.title = element_text(lineheight=.8, face="bold"))
 
@@ -90,7 +92,8 @@ izvoz_v_tisoč_USD_v_letu_2013<-tabela_izvoz_vseh_produktov$X2013
 izvoz_v_tisoč_USD_v_letu_2014<-tabela_izvoz_vseh_produktov$X2014
 
 izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov)+
-  aes(x=Države, y=Izvoz.v.tisoč.USD)+
+  aes(x=Države, y=c("izvoz_v_tisoč_USD_v_letu_2010","izvoz_v_tisoč_USD_v_letu_2011",
+  "izvoz_v_tisoč_USD_v_letu_2012","izvoz_v_tisoč_USD_v_letu_2013","izvoz_v_tisoč_USD_v_letu_2014"))+
   geom_line(colour = "red")+
   ggtitle("Skupni izvoz ZDA v letih 2010 do 2014")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
