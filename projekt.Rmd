@@ -1,6 +1,6 @@
 ---
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: "Študent FMF"
+author: "Dejan Gašparič"
 output:
   pdf_document:
     latex_engine: xelatex
@@ -19,7 +19,14 @@ source("lib/libraries.r", encoding = "UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal uvoz ter izvoz nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države.  Podatki bodo v velikosti tisoč ameriških dolarjih (USD) na enoto.
+Namen analize je ugotoviti v katere države ZDA največ izvaža in uvaža, kaj, koliko ter kako se izvoz in uvoz spreminjata skozi čas v zadnjih petih letih.
+
+Podatke bom pridobil na spletni strani:
+- https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
+- http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/Total;
+- http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Export/Indicator/XPRT-TRD-VL/Partner/by-country/Product/Total;
+- ostale povezave sledijo iz klasifikacije po produktih izmed zadnjih dveh povezav.
 
 ***
 
@@ -29,15 +36,18 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+## Podatki v obliki CSV
 
+Podatke smo v tej fazi uvozili iz WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Za izvoz imamo podatke za celoten izvoz ter za izvoze živali, zelenjave, mineralov, goriva, kemikalij, plastike in gume ter lesa. Na enaki način so uvoženi tudi podatki za uvoz. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
+Poglejmo tabeli za skupni izvoz ter izvoz ZDA:
 ```{r razpredelnice}
-kable(head(druzine))
-head(obcine)
+tabela_uvoz_vseh_produktov
+tabela_izvoz_vseh_produktov
 ```
 
-Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
+
+Podatki v tej razpredelnici so samo tipa "integer". V prvem stolpcu so tiste države v katere ZDA izvaža oziroma uvaža. Sledi pet stolpcev za leta po vrsti od leta 2010 do 2014. 
+Podatki predstavljeni grafično:
 
 ```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
 hist(obcine[,4], main = "Pogostost števila naselij",
