@@ -11,7 +11,7 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države.  Podatki bomo predatavljali, kot izvoz ali uvoz v tisoč ameriških dolarjih (US$) na enoto.
 
 Podatke bom pridobil na spletni strani:
--https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
+- https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/Total;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Export/Indicator/XPRT-TRD-VL/Partner/by-country/Product/Total;
 - ostale bom razdelil po produktih izmed zadnjih dveh povezav.
