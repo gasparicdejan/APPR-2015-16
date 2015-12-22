@@ -40,6 +40,7 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 
 Podatke smo v tej fazi uvozili iz WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Za izvoz imamo podatke za celoten izvoz ter za izvoze živali, zelenjave, mineralov, goriva, kemikalij, plastike in gume ter lesa. Na enaki način so uvoženi tudi podatki za uvoz. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
 Poglejmo tabeli za skupni izvoz ter izvoz ZDA:
+
 ```{r razpredelnice}
 tabela_uvoz_vseh_produktov
 tabela_izvoz_vseh_produktov
@@ -53,6 +54,8 @@ Podatki predstavljeni grafično:
 hist(obcine[,4], main = "Pogostost števila naselij",
      xlab = "Število naselij", ylab = "Število občin")
 ```
+
+## Podatki v obliki XML
 
 ***
 
