@@ -1,4 +1,4 @@
-# Analiza izvoza Slovenije
+# Analiza izvoza in uvoza Slovenije
 
 Avtor: Dejan Gašparič
 
@@ -8,24 +8,17 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
 ## Tematika
 
-Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje Slovenije. V obsegu te analize, bom obravnaval izvoz naše države v druge države sveta v zadnjih letih. Za vsako državo s katero Slovenija trguje, bodo podatki razvršeni po izdelkih/pridelkih.
-Podatki bomo predatavljali, kot izvoz v tisoč ameriških dolarjih (US$) in sicer bo ena enota velika tisoč ameriških dolarjev.
+Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države.  Podatki bomo predatavljali, kot izvoz ali uvoz v tisoč ameriških dolarjih (US$) na enoto.
 
-Podatke bom pridobil na spletni strani: 
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/01-05_Animal,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/06-15_Vegetable,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/25-26_Minerals,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/27-27_Fuels,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/28-38_Chemicals,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/39-40_PlastiRub,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/44-49_Wood,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/50-63_TextCloth,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/68-71_StoneGlas,
-- http://wits.worldbank.org/CountryProfile/en/Country/SVN/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/72-83_Metals.
+Podatke bom pridobil na spletni strani:
+-https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
+- http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/Total;
+- http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Export/Indicator/XPRT-TRD-VL/Partner/by-country/Product/Total;
+- ostale bom razdelil po produktih izmed zadnjih dveh povezav.
 
 ## Cilj
 
-Namen analize je ugotviti v katere države Slovenija največ izvaža, kaj največ izvaža ter kako se izvoz spreminja skozi čas.
+Namen analize je ugotviti v katere države ZDA največ izvaža in uvaža, kaj, koliko ter kako se izvoz in uvoz spreminjata skozi čas v zadnjih petih letih.
 
 ## Program
 
