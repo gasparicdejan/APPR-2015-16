@@ -64,3 +64,9 @@ Podatki so v vseh oblikah:
 - urejeni faktorji.
 
 Podatke sem uvozil in jih tudi prečistil ter nize pretvoril v števila. 
+Poglejno si tabeli, ki sme ju uvozil:
+
+```{r razpredelnice}
+tabela_partnerstvo_uvoz
+tabela_partnerstvo_izvoz
+```
