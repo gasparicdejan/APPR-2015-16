@@ -58,7 +58,20 @@ tabela_izvoz_lesa <- read.csv2("podatki/export_wood.csv", skip=1, na.strings = "
 
 # PODATKI V OBLIKI xml :
 # uvoz tabele držav, za katere je ZDA glavni partner v izvozu v % :
+
+link1 <- "http://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States"
+stran1 <- html_session(link1) %>% read_html()
+tabela_partnerstvo_izvoz <- stran %>% html_nodes(xpath="//table[@class='wikitable 
+                               sortable']") %>% .[[1]] %>% html_table()
+
+
 # uvoz tabele držav, za katere je ZDA glavni partner v uvozu v % :
+
+link2 <- "http://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States"
+stran2 <- html_session(link2) %>% read_html()
+tabela_partnerstvo_uvoz <- stran %>% html_nodes(xpath="//table[@class='wikitable 
+                                                sortable']") %>% .[[2]] %>% html_table()
+
 
 
 
