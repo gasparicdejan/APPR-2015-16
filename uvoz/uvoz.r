@@ -57,6 +57,11 @@ tabela_izvoz_lesa <- read.csv2("podatki/export_wood.csv", skip=1, na.strings = "
 
 
 # PODATKI V OBLIKI xml :
+
+library(rvest)
+library(dplyr)
+library(gsubfn)
+
 # uvoz tabele držav, za katere je ZDA glavni partner v izvozu v % :
 
 link1 <- "http://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States"
