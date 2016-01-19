@@ -167,8 +167,8 @@ svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthd
 
 
 Izvoz <- filter(tabela_izvoz_vseh_produktov, Leto == 2010)
-m1 <- match(svet$adm0_a3, Izvoz$Produkti)
-svet$Produkti <- Produkti$Produkti[m1]
+m1 <- match(Izvoz$Država, svet$name_long)
+svet$name_long <- Država$Produkti[m1]
 zem1 <- ggplot() + geom_polygon(data = svet, aes(x=long, y=lat, group = group, fill = Produkti),
                                 color = "grey") + 
   scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") + ylab("")
