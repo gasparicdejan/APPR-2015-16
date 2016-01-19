@@ -1,5 +1,17 @@
 # 2. faza: Uvoz podatkov
 
+library(knitr)
+
+library(ggplot2)
+library(dplyr)
+require(gsubfn)
+require(rvest)
+require(xml2)
+require(ggplot2)
+library(sp)
+library(maptools)
+
+
 # PODATKI V OBLIKI csv :
 # Uvoz ZDA :
 
@@ -150,6 +162,12 @@ tabela_izvoz_lesa$Leto <- tabela_izvoz_lesa$Leto %>% as.character() %>%
 tabela_izvoz_lesa$Leto <- tabela_izvoz_lesa$Leto %>% as.numeric()
 
 
+
+
+
+
+
+
 # PODATKI V OBLIKI xml :
 
 library(rvest)
@@ -179,33 +197,3 @@ tabela_partnerstvo_uvoz$Procent <- tabela_partnerstvo_uvoz$Procent %>%
   strapplyc("([0-9.]+)") %>% as.numeric()
 tabela_partnerstvo_uvoz$Država <- tabela_partnerstvo_uvoz$Država %>%
   strapplyc("([a-zA-Z ]+)")
-
-
-# GRAFI :
-
-# Uvoz dvajsetih največjih uvoznic ZDA v letih 2010 do 2014
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov)+ 
-    aes(x=Države, y=Leto)+
-    geom_line(colour = "red")+
-    ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letih 2010 do 2014")+
-    theme(plot.title = element_text(lineheight=.8, face="bold"))
-
-uvoz_v_celoti
-
-
-# Izvoz dvajsetih največjih izvoznic ZDA v letih 2010 do 2014
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>%
-                         filter(Leto == 2010) %>%
-                         arrange(desc(`Vsi produkti`)) %>% head(10))+
-  aes(x=Država, y=`Vsi produkti`)+
-  geom_bar(stat = "identity", fill = "green")+
-  ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letih 2010 do 2014")+
-  theme(plot.title = element_text(lineheight=.8, face="bold"))
-
-izvoz_v_celoti

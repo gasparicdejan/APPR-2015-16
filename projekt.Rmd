@@ -2,14 +2,14 @@
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
 author: "Dejan Gašparič"
 output:
-  word_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+  word_document: default
 ---
 
-```{r setup, echo=FALSE, results='hide', message=FALSE}
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 # Če želimo nastaviti pisave v PDF-ju, odkomentiramo
 # in sledimo navodilom v programu.
 #source("fontconfig.r", encoding = "UTF-8")
@@ -33,7 +33,7 @@ Podatke bom pridobil na spletni strani:
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE}
+```{r uvoz, echo=FALSE, message=FALSE}
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
@@ -42,9 +42,9 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 Podatke smo v tej fazi uvozili iz WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Za izvoz imamo podatke za celoten izvoz ter za izvoze živali, zelenjave, mineralov, goriva, kemikalij, plastike in gume ter lesa. Na enaki način so uvoženi tudi podatki za uvoz. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
 Poglejmo tabeli za skupni izvoz ter izvoz ZDA:
 
-```{r razpredelnice}
-tabela_uvoz_vseh_produktov
-tabela_izvoz_vseh_produktov
+```{r razpredelnice, echo=FALSE}
+kable(head(tabela_uvoz_vseh_produktov))
+kable(head(tabela_izvoz_vseh_produktov))
 ```
 
 
@@ -52,8 +52,8 @@ Podatki v tej razpredelnici so samo tipa "integer". V prvem stolpcu so tiste dr�
 Podatki predstavljeni grafično:
 
 ```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-hist(obcine[,4], main = "Pogostost števila naselij",
-     xlab = "Število naselij", ylab = "Število občin")
+#hist(obcine[,4], main = "Pogostost števila naselij",
+#     xlab = "Število naselij", ylab = "Število občin")
 ```
 
 ## Podatki v obliki XML
@@ -67,7 +67,7 @@ Podatki so v vseh oblikah:
 Podatke sem uvozil in jih tudi prečistil ter nize pretvoril v števila. 
 Poglejno si tabeli, ki sme ju uvozil:
 
-```{r razpredelnice}
-tabela_partnerstvo_uvoz
-tabela_partnerstvo_izvoz
+```{r razpredelnice2,echo=FALSE, message=FALSE}
+kable(head(tabela_partnerstvo_uvoz))
+kable(head(tabela_partnerstvo_izvoz))
 ```
