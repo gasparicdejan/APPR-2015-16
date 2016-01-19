@@ -163,4 +163,4 @@ zem1 <- ggplot() + geom_polygon(data = svet, aes(x=long, y=lat, group = group, f
                                 color = "grey") + 
   scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") + ylab("")
 
-plot(zem1)
+print(zem1)
