@@ -28,7 +28,7 @@ Podatke bom pridobil na spletni strani:
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE}
+```{r uvoz, echo=FALSE, message=FALSE}
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
