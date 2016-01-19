@@ -65,7 +65,7 @@ Tabeli v prvem stolpcu vsebujeta države s katerimi je ZDA glavna partnerica v u
 source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 ```
 
-V tem delu sem najprej izdelal grafe (5 grafov za izvoz in 5 za izvoz), ki prikazujejo 20 držav iz katerih ZDA največ izvažajo oziroma v katere največ uvažajo. Na abscisni osi so poimenovane države, na ordinatni pa velikost uvoza/izvoza v določenem letu (v tisoč ameriških dolarjih na enoto).
+V tem delu sem najprej izdelal grafe (5 grafov za izvoz in 5 za izvoz), ki prikazujejo 20 držav iz katerih ZDA največ izvažajo oziroma v katere največ uvaža. Na abscisni osi so poimenovane države, na ordinatni pa velikost uvoza/izvoza v določenem letu (v tisoč ameriških dolarjih na enoto).
 
 Prikazujem dva grafa za leto 2010:
 
