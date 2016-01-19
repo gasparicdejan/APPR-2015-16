@@ -14,135 +14,125 @@ library(maptools)
 
 ## GRAFI :
 
+Država<-tabela_uvoz_vseh_produktov$Država
+
 # Uvoz dvajsetih največjih uvoznic ZDA v letu 2010
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2010)%>%
+uvoz_v_celoti1 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2010)%>%
                           arrange(desc(`Vsi produkti`)) %>% head(20))+ 
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "red")+
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2010")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti
+uvoz_v_celoti1
+
+
 
 # Uvoz dvajsetih največjih uvoznic ZDA v letu 2011
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2011)%>%
+uvoz_v_celoti2 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2011)%>%
                           arrange(desc(`Vsi produkti`)) %>% head(20))+ 
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "red")+
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2011")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti
+uvoz_v_celoti2
+
+
 
 # Uvoz dvajsetih največjih uvoznic ZDA v letu 2012
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2012)%>%
+uvoz_v_celoti3 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2012)%>%
                           arrange(desc(`Vsi produkti`)) %>% head(20))+ 
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "red")+
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2012")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti
+uvoz_v_celoti3
+
+
 
 # Uvoz dvajsetih največjih uvoznic ZDA v letu 2013
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2013)%>%
+uvoz_v_celoti4 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2013)%>%
                           arrange(desc(`Vsi produkti`)) %>% head(20))+ 
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "red")+
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2013")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti
+uvoz_v_celoti4
+
+
 
 # Uvoz dvajsetih največjih uvoznic ZDA v letu 2014
-
-Države<-tabela_uvoz_vseh_produktov$Država
-
-uvoz_v_celoti <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2014)%>%
+uvoz_v_celoti5 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2014)%>%
                           arrange(desc(`Vsi produkti`)) %>% head(20))+ 
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "red")+
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2014")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti
+uvoz_v_celoti5
+
+
 
 # Izvoz dvajsetih največjih izvoznic ZDA v letu 2010
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2010)%>%
+izvoz_v_celoti1<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2010)%>%
                          arrange(desc(`Vsi produkti`)) %>% head(20))+
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "green")+
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2010")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti
+izvoz_v_celoti1
+
+
 
 # Izvoz dvajsetih največjih izvoznic ZDA v letu 2011
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2011)%>%
+izvoz_v_celoti2<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2011)%>%
                          arrange(desc(`Vsi produkti`)) %>% head(20))+
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "green")+
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2011")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti
+izvoz_v_celoti2
+
+
 
 # Izvoz dvajsetih največjih izvoznic ZDA v letu 2012
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2012)%>%
+izvoz_v_celoti3<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2012)%>%
                          arrange(desc(`Vsi produkti`)) %>% head(20))+
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "green")+
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2012")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti
+izvoz_v_celoti3
+
+
 
 # Izvoz dvajsetih največjih izvoznic ZDA v letu 2013
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2013)%>%
+izvoz_v_celoti4<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2013)%>%
                          arrange(desc(`Vsi produkti`)) %>% head(20))+
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "green")+
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2013")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti
+izvoz_v_celoti4
+
+
 
 # Izvoz dvajsetih največjih izvoznic ZDA v letu 2014
-
-Države<-tabela_izvoz_vseh_produktov$Država
-
-izvoz_v_celoti<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2014)%>%
+izvoz_v_celoti5<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2014)%>%
                          arrange(desc(`Vsi produkti`)) %>% head(20))+
   aes(x=Država, y=`Vsi produkti`)+
   geom_bar(stat = "identity", fill = "green")+
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2014")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti
+izvoz_v_celoti5
 
 
 

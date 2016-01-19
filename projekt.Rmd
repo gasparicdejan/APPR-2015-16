@@ -10,17 +10,12 @@ output:
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-# Če želimo nastaviti pisave v PDF-ju, odkomentiramo
-# in sledimo navodilom v programu.
-#source("fontconfig.r", encoding = "UTF-8")
-
-# Uvoz vseh potrebnih knjižnic
 source("lib/libraries.r", encoding = "UTF-8")
 ```
 
 # Izbira teme
 
-Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal uvoz ter izvoz nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države.  Podatki bodo v velikosti tisoč ameriških dolarjih (USD) na enoto.
+Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal uvoz ter izvoz nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države. Podatki bodo v velikosti tisoč ameriških dolarjih (USD) na enoto.
 Namen analize je ugotoviti v katere države ZDA največ izvaža in uvaža, kaj, koliko ter kako se izvoz in uvoz spreminjata skozi čas v zadnjih petih letih.
 
 Podatke bom pridobil na spletni strani:
@@ -33,41 +28,59 @@ Podatke bom pridobil na spletni strani:
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE, message=FALSE}
+```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE}
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
 ## Podatki v obliki CSV
 
-Podatke smo v tej fazi uvozili iz WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Za izvoz imamo podatke za celoten izvoz ter za izvoze živali, zelenjave, mineralov, goriva, kemikalij, plastike in gume ter lesa. Na enaki način so uvoženi tudi podatki za uvoz. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
+Podatke smo v tej fazi uvozili iz spletne strani WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Izvoz ter uvoz sta karakterizirana po parametrih: živali, zelenjava, minerali, goriva, kemikalije, plastika in guma, les ter izvoz in uvoz po vseh produktih. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
 Poglejmo tabeli za skupni izvoz ter izvoz ZDA:
 
-```{r razpredelnice, echo=FALSE}
+```{r razpredelnice1, echo=FALSE, message=FALSE, warning=FALSE}
 kable(head(tabela_uvoz_vseh_produktov))
 kable(head(tabela_izvoz_vseh_produktov))
 ```
 
 
-Podatki v tej razpredelnici so samo tipa "integer". V prvem stolpcu so tiste države v katere ZDA izvaža oziroma uvaža. Sledi pet stolpcev za leta po vrsti od leta 2010 do 2014. 
-Podatki predstavljeni grafično:
+V prvem stolpcu so tiste države v katere ZDA izvaža/uvaža (te države se ponovijo 5 krat, saj imamo podatke prikazane za 5 let), drugi stolpec prikazuje leto izvoza/uvoza ter tretji stolpec prikazuje količino izračunano v tisoč ameriških dolarjev na enoto. 
 
-```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-#hist(obcine[,4], main = "Pogostost števila naselij",
-#     xlab = "Število naselij", ylab = "Število občin")
-```
+
 
 ## Podatki v obliki XML
 
 Podatke v tej obliki sem uvozil iz spletnega portala wikipedija. Na spletni povezavi zgoraj sem uvozil drugo in tretjo tabelo, ki vsebujeta podatke o glavnih partnericah ZDA pri uvozu in izvozu. 
-Podatki so v vseh oblikah:
-- nizi;
-- numerični vektorji;
-- urejeni faktorji.
-
-Podatke sem uvozil in jih tudi prečistil ter nize pretvoril v števila. 
 Poglejno si tabeli, ki sme ju uvozil:
 
-```{r razpredelnice2,echo=FALSE, message=FALSE}
+```{r razpredelnice2,echo=FALSE, message=FALSE, warning=FALSE}
 kable(head(tabela_partnerstvo_uvoz))
 kable(head(tabela_partnerstvo_izvoz))
+```
+
+Tabeli v prvem stolpcu vsebujeta države s katerimi je ZDA glavna partnerica v uvozu in izvozu, drugi stolpec pa prikazuje kako močna partnerici sta (podatki prikazujejo odvisnost med državami v %).
+
+# Analiza in vizualizacija podatkov
+
+```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE}
+source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
+```
+
+V tem delu sem najprej izdelal grafe (5 grafov za izvoz in 5 za izvoz), ki prikazujejo 20 držav iz katerih ZDA največ izvažajo oziroma v katere največ uvažajo. Na abscisni osi so poimenovane države, na ordinatni pa velikost uvoza/izvoza v določenem letu (v tisoč ameriških dolarjih na enoto).
+
+Prikazujem dva grafa za leto 2010:
+
+```{r graf1, echo=FALSE, warning=FALSE, fig.cap='Ta graf prikazuje dvajset največjih uvoznic ZDA v letu 2010', fig.align='center'}
+print(uvoz_v_celoti1)
+```
+```{r graf2, echo=FALSE, warning=FALSE, fig.cap='Ta graf prikazuje dvajset največjih izvoznic ZDA v letu 2010', fig.align='center'}
+print(izvoz_v_celoti1)
+```
+
+Graf za uvoz je obarvan z rdečo barvo, graf za izvoz pa v zeleno.
+
+Naprej je sledil izdelava zemljevida. Zemljevid sem uvozil iz spletnega portala statsilk, ga nato uredil, da obarva tiste države sveta, za katere imamo podatke o izvozu in uvozu v letu 2010. Zemljevida za izvoz in uvoz sta ločena.
+Tako izgledala zemljevid za izvoz ZDA v druge države sveta v letu 2010:
+
+```{r zemljevid1, echo=FALSE, warning=FALSE, fig.align='center'}
+plot(zem1)
 ```
