@@ -82,5 +82,5 @@ Naprej je sledil izdelava zemljevida. Zemljevid sem uvozil iz spletnega portala 
 Tako izgledala zemljevid za izvoz ZDA v druge države sveta v letu 2010:
 
 ```{r zemljevid1, echo=FALSE, warning=FALSE, fig.align='center'}
-plot(zem1)
+print(zem1)
 ```
