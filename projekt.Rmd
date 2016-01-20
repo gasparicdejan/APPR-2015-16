@@ -88,4 +88,4 @@ Tako izgledala zemljevid za izvoz ZDA v druge države sveta v letu 2010:
 print(zem1)
 ```
 
-V njem vidimo, da ZDA največ izvaža na Kitajsko, sledi Kanada ter ostale države. 
+V njem vidimo, da ZDA največ izvaža v Kanado, sledi Kitajska ter ostale države. 
