@@ -78,7 +78,6 @@ print(uvoz_v_celoti1)
 print(izvoz_v_celoti1)
 ```
 
-Graf za uvoz je obarvan z rdečo barvo, graf za izvoz pa v zeleno.
 
 
 Naprej je sledila izdelava zemljevida. Zemljevid sem uvozil iz spletnega portala statsilk, ga nato uredil, da obarva tiste države sveta, za katere imamo podatke o izvozu in uvozu v letu 2010. Zemljevida za izvoz in uvoz sta ločena. 

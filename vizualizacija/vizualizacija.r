@@ -25,7 +25,7 @@ uvoz_v_celoti1 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2010)%>%
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2010")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti1
+# uvoz_v_celoti1
 
 
 
@@ -37,7 +37,7 @@ uvoz_v_celoti2 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2011)%>%
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2011")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti2
+# uvoz_v_celoti2
 
 
 
@@ -49,7 +49,7 @@ uvoz_v_celoti3 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2012)%>%
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2012")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti3
+# uvoz_v_celoti3
 
 
 
@@ -61,7 +61,7 @@ uvoz_v_celoti4 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2013)%>%
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2013")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti4
+# uvoz_v_celoti4
 
 
 
@@ -73,7 +73,7 @@ uvoz_v_celoti5 <- ggplot(tabela_uvoz_vseh_produktov %>% filter(Leto == 2014)%>%
   ggtitle("Uvoz dvajsetih največjih uvoznic ZDA v letu 2014")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-uvoz_v_celoti5
+# uvoz_v_celoti5
 
 
 
@@ -85,7 +85,7 @@ izvoz_v_celoti1<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2010)%>%
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2010")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti1
+# izvoz_v_celoti1
 
 
 
@@ -97,7 +97,7 @@ izvoz_v_celoti2<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2011)%>%
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2011")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti2
+# izvoz_v_celoti2
 
 
 
@@ -109,7 +109,7 @@ izvoz_v_celoti3<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2012)%>%
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2012")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti3
+ #izvoz_v_celoti3
 
 
 
@@ -121,7 +121,7 @@ izvoz_v_celoti4<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2013)%>%
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2013")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti4
+# izvoz_v_celoti4
 
 
 
@@ -133,7 +133,7 @@ izvoz_v_celoti5<-ggplot(tabela_izvoz_vseh_produktov %>% filter(Leto == 2014)%>%
   ggtitle("Izvoz dvajsetih največjih izvoznic ZDA v letu 2014")+
   theme(plot.title = element_text(lineheight=.8, face="bold"))
 
-izvoz_v_celoti5
+# izvoz_v_celoti5
 
 
 
@@ -172,7 +172,7 @@ zem1 <- ggplot() +
   scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") +
   ylab("")
 
-print(zem1)
+# print(zem1)
 
 
 
@@ -192,4 +192,4 @@ zem2 <- ggplot() +
   scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") +
   ylab("")
 
-print(zem2)
+# print(zem2)
