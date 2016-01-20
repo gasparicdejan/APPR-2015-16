@@ -18,7 +18,7 @@ source("lib/libraries.r", encoding = "UTF-8")
 Vsebina, ki jo bom obravnaval pri tem projektu obsega trgovanje ZDA. V obsegu te analize, bom obravnaval izvoz ter uvoz ZDA z drugimi državami sveta v zadnjih petih letih. Za vsako državo s katero ZDA trguje, bom prikazal uvoz ter izvoz nekaj glavnih kategorij produktov ter uvoz in izvoz vseh produktov, ki jih uvaža oziroma izvaža ZDA v te države. Podatki bodo v velikosti tisoč ameriških dolarjih (USD) na enoto.
 Namen analize je ugotoviti v katere države ZDA največ izvaža in uvaža, kaj, koliko ter kako se izvoz in uvoz spreminjata skozi čas v zadnjih petih letih.
 
-Podatke bom pridobil na spletni strani:
+Podatke sem pridobil na spletni strani:
 - https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Import/Indicator/MPRT-TRD-VL/Partner/by-country/Product/Total;
 - http://wits.worldbank.org/CountryProfile/en/Country/USA/StartYear/2010/EndYear/2014/TradeFlow/Export/Indicator/XPRT-TRD-VL/Partner/by-country/Product/Total;
@@ -34,11 +34,12 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 
 ## Podatki v obliki CSV
 
-Podatke smo v tej fazi uvozili iz spletne strani WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Izvoz ter uvoz sta karakterizirana po parametrih: živali, zelenjava, minerali, goriva, kemikalije, plastika in guma, les ter izvoz in uvoz po vseh produktih. Podatki časovno zavzemajo zadnjih pet let trgovanja ZDA.
-Poglejmo tabeli za skupni izvoz ter izvoz ZDA:
+Podatke smo v tej fazi uvozili iz spletne strani WITS- Worldbank. Podatki so ločeni glede na izvoz in uvoz. Izvoz ter uvoz sta karakterizirana po parametrih: živali, zelenjava, minerali, goriva, kemikalije, plastika in guma, les ter po vseh produktih skupaj. Podatki časovno zavzemajo trgovanje ZDA zadnjih pet let.
+Poglejmo del teh tabel za skupni uvoz ter izvoz ZDA:
 
 ```{r razpredelnice1, echo=FALSE, message=FALSE, warning=FALSE}
 kable(head(tabela_uvoz_vseh_produktov))
+
 kable(head(tabela_izvoz_vseh_produktov))
 ```
 
@@ -50,10 +51,11 @@ V prvem stolpcu so tiste države v katere ZDA izvaža/uvaža (te države se pono
 ## Podatki v obliki XML
 
 Podatke v tej obliki sem uvozil iz spletnega portala wikipedija. Na spletni povezavi zgoraj sem uvozil drugo in tretjo tabelo, ki vsebujeta podatke o glavnih partnericah ZDA pri uvozu in izvozu. 
-Poglejno si tabeli, ki sme ju uvozil:
+Tabeli, ki sme ju uvozil zgledata nekako tako:
 
 ```{r razpredelnice2,echo=FALSE, message=FALSE, warning=FALSE}
 kable(head(tabela_partnerstvo_uvoz))
+
 kable(head(tabela_partnerstvo_izvoz))
 ```
 
@@ -65,7 +67,7 @@ Tabeli v prvem stolpcu vsebujeta države s katerimi je ZDA glavna partnerica v u
 source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 ```
 
-V tem delu sem najprej izdelal grafe (5 grafov za izvoz in 5 za izvoz), ki prikazujejo 20 držav iz katerih ZDA največ izvažajo oziroma v katere največ uvaža. Na abscisni osi so poimenovane države, na ordinatni pa velikost uvoza/izvoza v določenem letu (v tisoč ameriških dolarjih na enoto).
+V tem delu sem najprej izdelal grafe (5 grafov za uvoz in 5 za izvoz), ki prikazujejo 20 držav iz katerih ZDA največ izvažajo oziroma v katere največ uvažajo. Na abscisni osi so poimenovane države, na ordinatni osi pa velikost uvoza/izvoza v določenem letu (v tisoč ameriških dolarjih na enoto).
 
 Prikazujem dva grafa za leto 2010:
 
@@ -78,9 +80,12 @@ print(izvoz_v_celoti1)
 
 Graf za uvoz je obarvan z rdečo barvo, graf za izvoz pa v zeleno.
 
-Naprej je sledil izdelava zemljevida. Zemljevid sem uvozil iz spletnega portala statsilk, ga nato uredil, da obarva tiste države sveta, za katere imamo podatke o izvozu in uvozu v letu 2010. Zemljevida za izvoz in uvoz sta ločena.
+
+Naprej je sledila izdelava zemljevida. Zemljevid sem uvozil iz spletnega portala statsilk, ga nato uredil, da obarva tiste države sveta, za katere imamo podatke o izvozu in uvozu v letu 2010. Zemljevida za izvoz in uvoz sta ločena. 
 Tako izgledala zemljevid za izvoz ZDA v druge države sveta v letu 2010:
 
 ```{r zemljevid1, echo=FALSE, warning=FALSE, fig.align='center'}
 print(zem1)
 ```
+
+V njem vidimo, da ZDA največ izvaža na Kitajsko, sledi Kanada ter ostale države. 

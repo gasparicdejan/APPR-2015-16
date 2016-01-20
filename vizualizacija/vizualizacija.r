@@ -155,15 +155,14 @@ pretvori.zemljevid <- function(zemljevid) {
 svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_countries.zip",
                              "ne_50m_admin_0_countries", encoding = "Windows-1252")
 
+
+Izvoz <- filter(tabela_izvoz_vseh_produktov, Leto == 2010)
 svet$Država <- as.character(svet$name_long)
 svet$Država[svet$Država == "Anguilla"] <- "Anguila"
 svet$Država[svet$Država == "Netherlands Antilles"] <- "Netherlands"
 # podobno še za ostale države, ki se ne ujemajo
 Izvoz$Država <- factor(Izvoz$Država)
 svet$Država <- factor(svet$Država, levels = levels(Izvoz$Država))
-
-
-Izvoz <- filter(tabela_izvoz_vseh_produktov, Leto == 2010)
 sv1 <- pretvori.zemljevid(svet)
 zem1 <- ggplot() +
   geom_polygon(data = Izvoz %>%
@@ -178,6 +177,12 @@ print(zem1)
 
 
 Uvoz <- filter(tabela_uvoz_vseh_produktov, Leto == 2010)
+svet$Država <- as.character(svet$name_long)
+svet$Država[svet$Država == "Anguilla"] <- "Anguila"
+svet$Država[svet$Država == "Netherlands Antilles"] <- "Netherlands"
+# podobno še za ostale države, ki se ne ujemajo
+Izvoz$Država <- factor(Izvoz$Država)
+svet$Država <- factor(svet$Država, levels = levels(Izvoz$Država))
 sv2 <- pretvori.zemljevid(svet)
 zem2 <- ggplot() +
   geom_polygon(data = Uvoz %>%
