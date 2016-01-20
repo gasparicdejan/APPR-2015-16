@@ -10,6 +10,7 @@ require(xml2)
 require(ggplot2)
 library(sp)
 library(maptools)
+library(reshape2)
 
 
 ## GRAFI :
@@ -154,13 +155,36 @@ pretvori.zemljevid <- function(zemljevid) {
 svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_countries.zip",
                              "ne_50m_admin_0_countries", encoding = "Windows-1252")
 
+svet$Država <- as.character(svet$name_long)
+svet$Država[svet$Država == "Anguilla"] <- "Anguila"
+svet$Država[svet$Država == "Netherlands Antilles"] <- "Netherlands"
+# podobno še za ostale države, ki se ne ujemajo
+Izvoz$Država <- factor(Izvoz$Država)
+svet$Država <- factor(svet$Država, levels = levels(Izvoz$Država))
 
 
 Izvoz <- filter(tabela_izvoz_vseh_produktov, Leto == 2010)
-m1 <- match(Izvoz$Država, svet$name_long)
-svet$name_long <- Država$Produkti[m1]
-zem1 <- ggplot() + geom_polygon(data = svet, aes(x=long, y=lat, group = group, fill = Produkti),
-                                color = "grey") + 
-  scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") + ylab("")
+sv1 <- pretvori.zemljevid(svet)
+zem1 <- ggplot() +
+  geom_polygon(data = Izvoz %>%
+                 right_join(sv1, by = c("Država" = "name_long")),
+               aes(x=long, y=lat, group = group, fill = `Vsi produkti`),
+               color = "grey") +
+  scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") +
+  ylab("")
 
 print(zem1)
+
+
+
+Uvoz <- filter(tabela_uvoz_vseh_produktov, Leto == 2010)
+sv2 <- pretvori.zemljevid(svet)
+zem2 <- ggplot() +
+  geom_polygon(data = Uvoz %>%
+                 right_join(sv2, by = c("Država" = "name_long")),
+               aes(x=long, y=lat, group = group, fill = `Vsi produkti`),
+               color = "grey") +
+  scale_fill_continuous(low = "#69b8f6", high = "#142d45") + xlab("") +
+  ylab("")
+
+print(zem2)

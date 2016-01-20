@@ -10,6 +10,7 @@ require(xml2)
 require(ggplot2)
 library(sp)
 library(maptools)
+library(reshape2)
 
 
 # PODATKI V OBLIKI csv :
