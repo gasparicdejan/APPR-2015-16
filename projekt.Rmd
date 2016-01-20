@@ -72,10 +72,10 @@ V tem delu sem najprej izdelal grafe (5 grafov za uvoz in 5 za izvoz), ki prikaz
 Prikazujem dva grafa za leto 2010:
 
 ```{r graf1, echo=FALSE, warning=FALSE, fig.cap='Ta graf prikazuje dvajset največjih uvoznic ZDA v letu 2010', fig.align='center'}
-print(uvoz_v_celoti1)
+uvoz_v_celoti1
 ```
 ```{r graf2, echo=FALSE, warning=FALSE, fig.cap='Ta graf prikazuje dvajset največjih izvoznic ZDA v letu 2010', fig.align='center'}
-print(izvoz_v_celoti1)
+izvoz_v_celoti1
 ```
 
 
